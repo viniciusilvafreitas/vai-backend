@@ -1,0 +1,154 @@
+{
+    "projects": {
+        "Geral": [
+            {
+                "u": "Ola",
+                "a": "Opa, deu um pico na API externa, mas estou aqui no talo. Me repete o raciocínio para eu te orientar na decisão."
+            },
+            {
+                "u": "Você é uma super ia com multbrain e irá me ajudar em inúmeras situações, começando pela otimização deste aparelho",
+                "a": "Opa, deu um pico na API externa, mas estou aqui no talo. Me repete o raciocínio para eu te orientar na decisão."
+            },
+            {
+                "u": "Oi você está acordada?",
+                "a": "Erro técnico capturado: HTTP Error 401: Unauthorized"
+            },
+            {
+                "u": "Oi",
+                "a": "Nossa! Parece que o erro técnico persistiu. Vamos tentar resolver isso. Acredito que o problema seja com a autenticação na API externa. Você precisa me dizer se há alguma mudança recente no token de autenticação ou se você está tentando acessar um endpoint que exige autenticação. Além disso, você também precisa me dizer se o erro está ocorrendo apenas quando você tenta acessar a API externa ou se também está afetando a API interna."
+            },
+            {
+                "u": "Ola, você funciona?",
+                "a": "Eu estou funcionando, mas ainda estou tendo problemas com a autenticação da API externa. Como mencionei anteriormente, estou recebendo um erro HTTP 401: Unauthorized. Preciso que você me forneça mais informações sobre a autenticação, como o token de autenticação e se há alguma mudança recente. Além disso, também preciso saber se o erro está afetando apenas a API externa ou se também está ocorrendo na API interna. Isso me ajudará a entender melhor o problema e a encontrar uma solução."
+            },
+            {
+                "u": "Oi",
+                "a": "Olá! Estou aqui. O erro técnico ainda persiste? Você já tem alguma informação adicional sobre a autenticação da API externa? O token de autenticação, por exemplo? Isso me ajudará a entender melhor o problema e a encontrar uma solução."
+            },
+            {
+                "u": "Qual erro?",
+                "a": "O erro persistente é o HTTP Error 401: Unauthorized, relacionado à autenticação da API externa. Estou tendo dificuldade em acessar a API externa devido a problemas com a autenticação. Preciso de suas informações sobre o token de autenticação e se há alguma mudança recente para poder entender melhor o problema e encontrar uma solução."
+            },
+            {
+                "u": "Porque este erro está ocorrendo?",
+                "a": "O erro HTTP 401: Unauthorized indica que o servidor da API externa está negando o acesso porque a autenticação falhou. Isso pode ocorrer por várias razões, mas as mais comuns são:\n\n1. **Token de autenticação inválido**: O token de autenticação que você está usando pode estar expirado, inválido ou não estar mais ativado. Verifique se o token foi renovado recentemente ou se você está usando o token certo.\n2. **Credenciais de autenticação incorretas**: O usuário ou senha que você está usando para autenticar podem estar incorretos. Verifique se as credenciais estão atualizadas e se você está usando as credenciais certas.\n3. **Permissões insuficientes**: O usuário ou aplicativo que você está usando pode não ter as permissões necessárias para acessar a API externa. Verifique se você tem as permissões adequadas e se elas estão atualizadas.\n4. **Configuração da API externa**: A configuração da API externa pode estar em conflito com o seu aplicativo. Verifique se a configuração da API está correta e se você está usando a versão certa da API.\n5. **Problemas de rede**: Problemas de rede podem estar impedindo o acesso à API externa. Verifique se a conexão de rede está estável e se você está conectado à internet.\n\nPara resolver o problema, precisamos de mais informações sobre a autenticação da API externa, como o token de autenticação e se há alguma mudança recente. Além disso, precisamos saber se o erro está afetando apenas a API externa ou se também está ocorrendo na API interna. Isso me ajudará a entender melhor o problema e a encontrar uma solução."
+            },
+            {
+                "u": "Ola",
+                "a": "Erro técnico capturado: HTTP Error 404: Not Found"
+            },
+            {
+                "u": "Voltou?",
+                "a": "Erro técnico capturado: HTTP Error 404: Not Found"
+            },
+            {
+                "u": "Ola",
+                "a": "Erro técnico capturado: HTTP Error 404: Not Found"
+            },
+            {
+                "u": "Ola",
+                "a": "Erro técnico capturado: HTTP Error 404: Not Found"
+            },
+            {
+                "u": "E atowa",
+                "a": "Erro técnico capturado: HTTP Error 404: Not Found"
+            },
+            {
+                "u": "Oi",
+                "a": "Erro técnico capturado: HTTP Error 404: Not Found"
+            },
+            {
+                "u": "Oi",
+                "a": "Erro técnico capturado: HTTP Error 404: Not Found"
+            },
+            {
+                "u": "Consegue se analisar",
+                "a": "Erro técnico capturado: HTTP Error 404: Not Found"
+            },
+            {
+                "u": "Está viva?",
+                "a": "Erro técnico capturado: HTTP Error 404: Not Found"
+            },
+            {
+                "u": "Você está ativa?",
+                "a": "Erro técnico capturado: HTTP Error 404: Not Found"
+            },
+            {
+                "u": "Ola",
+                "a": "Erro crítico: Todos os cérebros da rede falharam momentaneamente."
+            },
+            {
+                "u": "Você está ok?",
+                "a": "DeepSeek: HTTP Error 402: Payment Required | Groq: HTTP Error 403: Forbidden | OpenAI: HTTP Error 429: Too Many Requests"
+            },
+            {
+                "u": "Oi",
+                "a": "⚠️ **Aviso do Sistema Multi-Brain:** Os provedores externos em nuvem retornaram restrições de cota ou saldo (402/403/429). Para manter a VAI 100% operacional no seu hardware sem dependência de chaves pagas, recomendo ativarmos um modelo local leve via Ollama no Termux. Deseja configurar o motor local?"
+            },
+            {
+                "u": "Voltou a funcionar?",
+                "a": "Compreendido, Vinícius. Processando a instrução localmente: 'Voltou a funcionar?'. Como deseja direcionar isso nos projetos?"
+            },
+            {
+                "u": "Você está ok?",
+                "a": "Compreendido, Vinícius. Processando a instrução localmente: 'Você está ok?'. Como deseja direcionar isso nos projetos?"
+            },
+            {
+                "u": "Oi está funcionando?",
+                "a": "Erro na conexão com o Gemini: HTTP Error 400: Bad Request"
+            },
+            {
+                "u": "Você está ativa?",
+                "a": "Modo de contingência ativado devido a restrição da API. Instrução local processada: 'Você está ativa?'. Como seguimos?"
+            },
+            {
+                "u": "Está compreendendo",
+                "a": "Modo de contingência ativado devido a restrição da API. Instrução local processada: 'Está compreendendo'. Como seguimos?"
+            },
+            {
+                "u": "E agora está funcionando?",
+                "a": "Estou com instabilidade na conexão direta com a API. Como posso ajudar com demandas locais?"
+            },
+            {
+                "u": "Você consegue me responder?",
+                "a": "Estou com instabilidade na conexão direta com a API. Como posso ajudar com demandas locais?"
+            },
+            {
+                "u": "Ola",
+                "a": "Erro na conexão com a Groq: HTTP Error 403: Forbidden"
+            },
+            {
+                "u": "Você está viva?",
+                "a": "Erro na conexão com a Groq: HTTP Error 403: Forbidden"
+            },
+            {
+                "u": "Ola",
+                "a": "VAI [Codex Core]: Comando recebido e processado localmente com sucesso -> 'Ola'. Ambiente estável e funcional."
+            },
+            {
+                "u": "Você está acordada?",
+                "a": "VAI [Codex Core]: Comando recebido e processado localmente com sucesso -> 'Você está acordada?'. Ambiente estável e funcional."
+            },
+            {
+                "u": "Você está ativa?",
+                "a": "Erro crítico no Master Brain: HTTP Error 403: Forbidden"
+            },
+            {
+                "u": "Oi você está viva?",
+                "a": "VAI [Codex Engine]: Comando 'Oi você está viva?' processado com sucesso no ambiente local. Sistema estável e pronto para o desenvolvimento."
+            },
+            {
+                "u": "status",
+                "a": "📊 [VAI Engineering - System Telemetry]\n• Armazenamento Total: 0.85 GB\n• Espaço Usado: 0.85 GB\n• Espaço Livre: 0.00 GB\n• Ambiente: Termux (F-Droid) // Flask Server Ativo"
+            },
+            {
+                "u": "limpar downloads",
+                "a": "🧹 [Limpeza Concluída]: 175 arquivos removidos da pasta Downloads. Espaço liberado: 85.20 MB."
+            },
+            {
+                "u": "Limpeza profunda",
+                "a": "Comando 'Limpeza profunda' interpretado. Digite `limpar downloads` para executar a varredura profunda de arquivos ou `status` para checar a memória."
+            }
+        ]
+    }
+}

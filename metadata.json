@@ -1,0 +1,8 @@
+{
+  "name": "Lista de Vez",
+  "description": "Sistema de gestão de vez de consultores, controle de vendas, orçamentos e CRM de óticas",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-app: var(--bg-app);
+  --color-card: var(--bg-card);
+  --color-input: var(--bg-input);
+  --color-hover: var(--bg-hover);
+  --color-txtPrimary: var(--text-primary);
+  --color-txtSecondary: var(--text-secondary);
+  --color-txtMuted: var(--text-muted);
+  --color-borderApp: var(--border-app);
+  --color-borderAccent: var(--border-accent);
+  --color-brand: var(--color-primary);
+  --color-success: var(--color-success);
+  --color-warning: var(--color-warning);
+  --color-purpleMeta: var(--color-purple);
+}
+
+@layer base {
+  /* GLOBAL FONT SCALING (+10% REM BASE) & TIPOGRAFIA BASE */
+  html {
+    font-size: 17.6px; /* Aumenta a escala global de fontes rem em 10% (16px * 1.1) */
+  }
+
+  html, body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--bg-app);
+    color: var(--text-primary);
+    transition: background-color 0.2s ease, color 0.2s ease;
+    min-height: 100vh;
+  }
+
+  /* TEMA CLARO (LIGHT MODE - ☀️) */
+  :root, html.light, .theme-paper {
+    --bg-app: #F5EFE6;          /* Fundo geral da página */
+    --bg-card: #EFECE6;         /* Cards, Containers e Seções */
+    --bg-input: #FFFFFF;        /* Inputs, Selects, Accordions e Modais */
+    --bg-hover: #E2DDD5;        /* Estado de hover/interação */
+    
+    --text-primary: #1E293B;    /* Títulos, Nomes, Valores Principais */
+    --text-secondary: #64748B;  /* Subtítulos, Rótulos e Placeholders */
+    --text-muted: #94A3B8;      /* Textos desativados / rodapés */
+    
+    --border-app: #CBD5E1;      /* Bordas de cards e inputs */
+    --border-accent: #94A3B8;   /* Bordas destacadas */
+    
+    --color-primary: #2563EB;   /* Azul Principal */
+    --color-success: #10B981;   /* Verde Venda/Sucesso */
+    --color-warning: #F59E0B;   /* Amarelo/Laranja Meta Mínima */
+    --color-purple: #8B5CF6;    /* Roxo Mega Meta */
+
+    --border-color: #CBD5E1;
+    --bg-card-hover: #E5E0D8;
+    --accent-primary: #2563EB;
+    --accent-success: #10B981;
+    --accent-warning: #F59E0B;
+    --accent-danger: #DC2626;
+  }
+
+  /* TEMA ESCURO REFINADO (DARK MODE - 🌙) */
+  html.dark, .theme-dark {
+    --bg-app: #0F172A;          /* Fundo principal (slate-900) */
+    --bg-card: #1E293B;         /* Fundo de cards e containers (slate-800) */
+    --bg-input: #334155;        /* Fundo de inputs e campos (slate-700) */
+    --bg-hover: #334155;        /* Hover em elementos (slate-700) */
+    
+    --text-primary: #F8FAFC;    /* Texto principal claro (slate-50) */
+    --text-secondary: #94A3B8;  /* Texto secundário (slate-400) */
+    --text-muted: #64748B;      /* Placeholders e legendas (slate-500) */
+    
+    --border-app: #334155;      /* Bordas em modo escuro (slate-700) */
+    --border-accent: #475569;   /* Bordas destacadas dark */
+    
+    --color-primary: #3B82F6;   /* Azul Destaque no dark mode */
+    --color-success: #10B981;   /* Verde Sucesso */
+    --color-warning: #F59E0B;   /* Amarelo/Laranja */
+    --color-purple: #A855F7;    /* Roxo Mega Meta */
+
+    --border-color: #334155;
+    --bg-card-hover: #334155;
+    --accent-primary: #3B82F6;
+    --accent-success: #10B981;
+    --accent-warning: #F59E0B;
+    --accent-danger: #EF4444;
+  }
+
+  /* ESTILIZAÇÃO GLOBAL DE FORMULÁRIOS (INPUT, SELECT, TEXTAREA) */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="submit"]):not([type="color"]):not([type="range"]),
+  select,
+  textarea {
+    background-color: var(--bg-input);
+    color: var(--text-primary);
+    border: 1px solid var(--border-app);
+    border-radius: 0.75rem; /* rounded-xl */
+    padding: 0.75rem; /* p-3 */
+    width: 100%; /* w-full */
+    outline: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  input:not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="submit"]):not([type="color"]):not([type="range"]):focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--text-muted);
+  }
+}
+
+@layer utilities {
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 20px);
+  }
+  .bg-app { background-color: var(--bg-app); }
+  .bg-card-theme { background-color: var(--bg-card); }
+  .bg-input-theme { background-color: var(--bg-input); }
+  .bg-card-hover { background-color: var(--bg-hover); }
+  .text-primary-theme { color: var(--text-primary); }
+  .text-secondary-theme { color: var(--text-secondary); }
+  .text-muted-theme { color: var(--text-muted); }
+  .border-theme { border-color: var(--border-app); }
+
+  /* CLASSE UTILITÁRIA DE FOCO, ESPAÇAMENTO E BORDAS PARA .bg-input */
+  .input-with-icon {
+    padding-left: 3rem !important;
+  }
+
+  .bg-input {
+    background-color: var(--bg-input);
+    color: var(--text-primary);
+    border-color: var(--border-app);
+    border-radius: 0.75rem; /* rounded-xl */
+  }
+
+  input.bg-input,
+  select.bg-input,
+  textarea.bg-input,
+  .input-field {
+    width: 100%; /* w-full */
+    padding: 0.75rem; /* p-3 */
+    outline: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .bg-input:focus,
+  .bg-input:focus-within,
+  input.bg-input:focus,
+  select.bg-input:focus,
+  textarea.bg-input:focus {
+    outline: none !important;
+    border-color: #3B82F6 !important;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5) !important;
+  }
+
+  /* 4 PADRÕES DE TAMANHOS DE FONTE GLOBAIS (REGRA DE HIERARQUIA VISÍVEL) */
+  .font-pattern-caption { font-size: 0.725rem; line-height: 1.15; font-weight: 600; }  /* Legendas e Badges */
+  .font-pattern-body { font-size: 0.9rem; line-height: 1.4; font-weight: 500; }       /* Texto de Corpo e Inputs */
+  .font-pattern-subheading { font-size: 1.15rem; line-height: 1.3; font-weight: 700; } /* Subtítulos e Cards */
+  .font-pattern-title { font-size: 1.5rem; line-height: 1.25; font-weight: 800; }     /* Títulos Principais */
+}
+
+@layer components {
+  /* Botão de Venda Selecionado (Emerald / Sucesso) */
+  .btn-type-venda-active, .btn-theme-emerald {
+    @apply bg-emerald-100/90 text-emerald-700 border border-emerald-300/80 font-bold transition-all shadow-xs dark:bg-emerald-950/50 dark:text-emerald-300 dark:border-emerald-800/60 hover:bg-emerald-200/90 dark:hover:bg-emerald-900/60;
+  }
+  
+  /* Botão de Orçamento Selecionado (Blue / Primário) */
+  .btn-type-orcamento-active, .btn-theme-blue {
+    @apply bg-blue-100/90 text-blue-700 border border-blue-300/80 font-bold transition-all shadow-xs dark:bg-blue-950/50 dark:text-blue-300 dark:border-blue-800/60 hover:bg-blue-200/90 dark:hover:bg-blue-900/60;
+  }
+
+  /* Botão Tema Âmbar / Laranja */
+  .btn-theme-amber {
+    @apply bg-amber-100/90 text-amber-700 border border-amber-300/80 font-bold transition-all shadow-xs dark:bg-amber-950/50 dark:text-amber-300 dark:border-amber-800/60 hover:bg-amber-200/90 dark:hover:bg-amber-900/60;
+  }
+
+  /* Botão Tema Roxo / Mega */
+  .btn-theme-purple {
+    @apply bg-purple-100/90 text-purple-700 border border-purple-300/80 font-bold transition-all shadow-xs dark:bg-purple-950/50 dark:text-purple-300 dark:border-purple-800/60 hover:bg-purple-200/90 dark:hover:bg-purple-900/60;
+  }
+
+  /* Botão Tema Rose / Vermelho */
+  .btn-theme-rose {
+    @apply bg-rose-100/90 text-rose-700 border border-rose-300/80 font-bold transition-all shadow-xs dark:bg-rose-950/50 dark:text-rose-300 dark:border-rose-800/60 hover:bg-rose-200/90 dark:hover:bg-rose-900/60;
+  }
+
+  /* Botão Opção Inativa / Neutra */
+  .btn-type-inactive, .btn-theme-inactive {
+    background-color: var(--bg-input);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-app);
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+  .btn-type-inactive:hover, .btn-theme-inactive:hover {
+    background-color: var(--bg-hover);
+    color: var(--text-primary);
+  }
+}
