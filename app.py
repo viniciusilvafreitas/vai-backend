@@ -38,7 +38,7 @@ def chat():
 
         if gemini_key:
             try:
-                url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={gemini_key}"
+                url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={gemini_key}"
                 payload = {"contents": [{"parts": [{"text": msg}]}]}
                 res = requests.post(url, json=payload, timeout=10)
                 if res.status_code == 200:
